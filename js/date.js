@@ -4,7 +4,7 @@ dv.style.opacity = 0;
 var val = 0;
 function timer() {
     // Set the target date to November 18, 2022, at 01:00
-    var start = new Date(2022, 10, 18, 1, 0); // Note: Months are zero-indexed, so 10 represents November
+    var start = new Date(2022, 10, 18, 0, 0); // Note: Months are zero-indexed, so 10 represents November
 
     var t = new Date() - start;
     var d = Math.floor(t / 1000 / 60 / 60 / 24);
