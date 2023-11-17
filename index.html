@@ -1,0 +1,69 @@
+<!DOCTYPE HTML>
+<html lang="en">
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+		<meta charset="UTF-8">
+		<title>Prva godišnjica ljubavi</title>
+		<link rel="stylesheet" type="text/css" href="./css/format.css">
+	</head>
+
+	<body style="margin:0px">
+		<audio autoplay loop>
+			<source src="music/music.mp3" type="audio/mpeg">
+			Your browser does not support the audio.
+		</audio>
+		<canvas></canvas>
+		<div id="imgTxt">
+			<span id="Txt"></span> <br />
+			<span id="tmp"></span>
+			<img id="img" src="">
+		</div>
+		<div id="heartTxt">
+			<span id="clickMe">Klik!</span>
+			<div id="heart">
+				<button id="button" onclick="play()"></button>
+			</div>
+		</div>
+		<div id="content">
+			<h2 id="together">Zajedno smo</h2>
+			<div id="timer">
+				<b id="d"></b> Dana 
+				<b id="h"></b> Sati
+				<b id="m"></b> Minuta
+				<b id="s"></b> Sekundi
+			</div>
+		</div>
+
+    	<div id = "typeDiv">
+        	<span id="txt1"></span> <br />
+        	<span id="txt2"></span>
+    	</div>		
+
+		<script >
+			var ok = 0;
+			var flag = 1;
+			var myImage = document.getElementById("img");
+			var myTxt = document.getElementById("Txt");
+			var imageArray = ["pic/pic1.jpg", "pic/pic2.jpg", "pic/pic3.jpg", "pic/pic4.jpg", "pic/pic5.jpg", "pic/pic6.jpg", 
+			"pic/pic7.jpg", "pic/pic8.jpg", "pic/pic9.jpg", "pic/pic10.jpg", "pic/pic11.jpg", "pic/pic12.jpg", "pic/pic13.jpg",
+			"pic/pic14.jpg", "pic/pic15.jpg", "pic/pic16.jpg", "pic/pic17.jpg", "pic/pic18.jpg", "pic/pic19.jpg", "pic/pic20.jpg", "pic/pic21.jpg", "pic/pic22.jpg", "pic/pic23.jpg"];
+			var imageIndex = 0;
+			var txtArray = ["Zdravo mali Miško!",
+			 "Ovog puta sam ti napisao malo digitalno pismo. Ako čitaš ovo, znači da je prošlo tačno godinu dana od kad smo zajedno <3 ",
+			  "Nemam reči kojima bih mogao da izrazim dubinu ljubavi koju osećam prema tebi.",
+			 "Mnogo mi značiš!", "Prošlo je godina dana otkako smo zajedno, proletelo je kao tren.",
+			  "Hvala ti za svaki trenutak koji smo zajedno!", "Želim da znaš,",
+			 "da si najbolja devojka na svetu", "da te volim najviše na svetu", "da cenim svaki trenutak proveden sa tobom", "pogotovo kad sam u tvom zagrljaju", 
+			 "Želim da provedem ceo život sa tobom, da zajedno rastemo, i da se čuvkamo.", "Mnogo mi nedostaješ dok ovo pišem, jedva čekam da se vratim kući :( !!!", "Razumem da imaš neke strahove koje nekad ne možeš da obuzdaš i onda budeš mali miško ljutko, ali želim da znaš da sam uvek tu za tebe, da te volim, slušam, mazim, pazim i da zajedno gradimo našu budućnost.", 
+			 "Tvoji mali slatki obrašćići kad se smeješ su mi glavna stvar na svetu, i uvek ću se truditi da ti pružim ljubav, podršku i razumevanje koje zaslužuješ", "Spreman sam da s tobom uvek delim sve, sve radosti, sve lepote, ali i da zajedno prevazilazimo izazove koje nam život donese.","Zahvalan sam na godini ljubavi koju smo proveli zajedno, i radujem se svakoj sledećoj koja nas čeka.","Ti si moj srodni mali miško duša, moj najbolji prijatelj i ljubav mog života.","Volim te više nego reči mogu opisati.","Jesmo imali i uspone i padove,","i neke sitne nesuglasice koje smo iskoristili da samo poboljšamo i učvrstimo našu vezu.","S ljubavlju tvoj,","veliki miško <3"
+			];
+			 var len = imageArray.length;
+			var t = 0;
+		</script>
+		
+		<script type="text/javascript" src="./js/stars.js"></script>
+		<script type="text/javascript" src="./js/typeWriter.js"></script>
+		<script type="text/javascript" src="./js/date.js"></script>
+		<script type="text/javascript" src="./js/playImg.js"></script>
+	</body>
+</html>
